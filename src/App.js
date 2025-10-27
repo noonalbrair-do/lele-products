@@ -60,7 +60,7 @@ function App() {
       <h2>Products</h2>
       {products.map(product => (
         <div key={product.id} style={{ marginBottom: "10px" }}>
-          <span>{product.name} - ${product.price}</span>
+          <span>{product.name} - {product.price} EGP</span>
           <button style={{ marginLeft: "10px" }} onClick={() => addToCart(product)}>Add to Cart</button>
         </div>
       ))}
@@ -69,7 +69,7 @@ function App() {
       {cart.length === 0 && <p>Cart is empty.</p>}
       {cart.map(item => (
         <div key={item.id}>
-          {item.name} x{item.qty} - ${item.price * item.qty}
+          {item.name} x{item.qty} - {item.price * item.qty} EGP
           <button style={{ marginLeft: "10px" }} onClick={() => removeFromCart(item.id)}>Remove</button>
         </div>
       ))}
@@ -84,5 +84,6 @@ function App() {
 }
 
 export default App;
+
 
 
