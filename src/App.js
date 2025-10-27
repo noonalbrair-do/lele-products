@@ -3,7 +3,7 @@ import "./index.css";
 
 function App() {
   const products = [
-    { id: 1, name: "Hair Oils", price: 15 },
+    { id: 1, name: "Hair Oils", price: 150 },
     { id: 2, name: "Hair Creams", price: 180 },
     { id: 3, name: "Hair Perfume", price: 100 },
     { id: 4, name: "Body Scrub", price: 150 },
@@ -84,4 +84,5 @@ function App() {
 }
 
 export default App;
+
 
